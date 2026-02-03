@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --max-old-space-size=8192 server.js",
+    "dev": "node --max-old-space-size=8192 --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:indesign": "node test-indesign.js",
+    "health": "node health-check.js",
+    "find:indesign": "./find-indesign.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Backend server for InDesign to PDF conversion",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "multer": "^2.0.2",
+    "uuid": "^13.0.0"
+  }
+}
